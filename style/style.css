@@ -1,0 +1,860 @@
+/* variabel */
+:root {
+  --primary: rgb(238, 0, 0);
+  --bg: rgb(238, 238, 238);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+/* variabel end */
+
+/* HOME */
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 3%;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 2px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: flex;
+  width: 13%;
+  height: 13%;
+  margin: 0rem 5%;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.navbar-logo span {
+  color: white;
+}
+
+.navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scalex(0);
+  transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scalex(0.5);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.navbar-extra a:hover {
+  color: var(--primary);
+}
+/* navbar end */
+
+/* content */
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+.content {
+  padding: 1.4rem 5%;
+  margin-top: 5rem;
+  max-width: 60rem;
+}
+
+.content h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.content h1 span {
+  color: var(--primary);
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-top: 1.1rem;
+  line-height: 1.1;
+  font-weight: 100;
+  mix-blend-mode: difference;
+}
+
+.cta {
+  margin-top: 1.4rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.hero-img-wrapper {
+  margin-right: 10rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+/* home end */
+
+/* ket */
+.ket {
+  width: 100%;
+  height: 20vh;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ket-font {
+  width: 300px;
+}
+
+.ket-font h3 {
+  font-family: "rubik";
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+.ket-font p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+/* ket end */
+
+/* service */
+.service {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-service {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+}
+
+.box {
+  width: 400px;
+  padding: 20px;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.box i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--bg);
+}
+
+.box p {
+  font-weight: 100;
+}
+/* service end */
+/* HOME */
+
+/* PELATIH */
+/* content */
+.hero-a {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+}
+/* content end */
+
+/* ketua umum */
+
+.hero-b {
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pelatih {
+  padding: 1.4rem 5%;
+  margin-top: 6rem;
+  max-width: 60rem;
+}
+
+.pelatih h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.pelatih-a {
+  font-size: 1.3rem;
+  border-bottom: 4px solid var(--primary);
+}
+
+.ketum {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.box-ketum {
+  border: 3px solid var(--primary);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.tum-box {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.title {
+  width: 100%;
+  height: 20vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 3rem;
+}
+
+.pelatih-b {
+  border-bottom: 4px solid var(--primary);
+}
+
+.fihter {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-fighter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.fighter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fighter-box img {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.fighter-box h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 15rem;
+  border-bottom: 4px solid var(--primary);
+}
+
+/* swiper */
+
+.fighter .swiper-slide-botton {
+  color: var(--primary);
+  transition: 0.2s ease;
+}
+
+.fighter .swiper-slide-botton:hover {
+  color: white;
+}
+/* PELATIH */
+
+/* SATLAT */
+/* content */
+
+/* satlat a */
+.satlat h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.satlat-a {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-satlat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 3px solid var(--primary);
+  border-radius: 30px;
+}
+
+.satlat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.satlat-box img {
+  margin-left: 5rem;
+}
+/* satlat a end */
+
+/* ket sat */
+.ket-sat {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ket-sat p {
+  text-align: center;
+  padding: 25px;
+}
+/* ket sat end */
+
+/* satlat b */
+.satlat-b {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-sat {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+/* satlat b end */
+
+/* content end */
+/* SATLAT END */
+
+/* PRESTASI */
+.hero-d {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+.hero-e {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prestasi {
+  padding: 1.4rem 5%;
+  margin-top: 6rem;
+  max-width: 60rem;
+}
+
+.prestasi h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.prestasi-a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.prestasi-a .conteiner {
+  width: 100%;
+}
+
+.box-prestasi {
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.prestasi-box {
+  padding: 1rem;
+}
+
+.prestasi-box i {
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+/* PRESATSI END */
+
+/* SEJARAH */
+.hero-f {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+.sejarah {
+  padding: 1.4rem 5%;
+  margin-top: 6rem;
+  max-width: 60rem;
+}
+
+.sejarah h3 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.sejarah-a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-sejarah {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--primary);
+}
+
+.sejarah-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sejarah-box p {
+  width: 50rem;
+  margin: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sejarah-box img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.arti {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.arti h1 {
+  border-bottom: 4px solid var(--primary);
+}
+
+.lambang {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--primary);
+}
+
+.box-lambang {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lambang-box {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arti-a {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+}
+
+.arti-a h3 {
+  margin-bottom: 0.4rem;
+}
+
+.janji-a {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.janji-1 {
+  border-bottom: 4px solid var(--primary);
+}
+
+.janji-2 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.img-j {
+  position: absolute;
+  width: 40%;
+}
+
+.box-janji {
+  position: relative;
+  padding: 20px;
+}
+/* SEJARAH END */
+
+/* FOOTER */
+.footer {
+  background-color: var(--primary);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box span {
+  font-weight: bold;
+}
+/* FOOTER END */
+
+/* media quaris */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 759px) {
+  html {
+    font-size: 62.5%;
+  }
+  /* home */
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(2, 2, 2);
+    width: 20rem;
+    height: 50vh;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .active {
+    right: 0;
+    transition: 0.3s;
+  }
+
+  .navbar-nav a {
+    display: block;
+    margin: 1.3rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 5rem;
+  }
+  .content p {
+    font-size: 2rem;
+  }
+
+  .content a {
+    font-size: 1.5rem;
+  }
+
+  .ket {
+    height: 10vh;
+  }
+
+  .ket-font {
+    width: 200px;
+  }
+
+  .ket-font h3 {
+    font-size: 3rem;
+  }
+
+  .footer {
+    height: 5vh;
+  }
+
+  .footer-box {
+    font-size: 1.2rem;
+  }
+  /* home end */
+
+  /* pelatih */
+  .hero-a {
+    min-height: 20vh;
+    width: 100%;
+  }
+
+  .hero-b {
+    min-height: 5vh;
+  }
+
+  .ketum {
+    height: 25vh;
+  }
+
+  .hero-c {
+    min-height: 20vh;
+  }
+
+  .hero-d {
+    min-height: 20vh;
+  }
+
+  .hero-e {
+    min-height: 5vh;
+  }
+
+  .hero-f {
+    min-height: 20vh;
+  }
+
+  .title {
+    height: 5vh;
+  }
+
+  .fighter-box h3 {
+    max-width: 20rem;
+  }
+
+  /* sejarah */
+  .box-sejarah {
+    flex-direction: column-reverse;
+  }
+
+  .arti {
+    height: 5vh;
+    width: 100%;
+  }
+
+  .box-lambang {
+    flex-direction: column;
+  }
+
+  .lambang-box p {
+    margin-bottom: 2rem;
+  }
+
+  .satlat-a {
+    height: 25vh;
+  }
+
+  .satlat-b {
+    height: 40vh;
+  }
+}
+
+/* mobile */
+@media (max-width: 526px) {
+  html {
+    font-size: 50%;
+  }
+
+  .service {
+    height: 48vh;
+  }
+
+  .fighter-box img {
+    width: 50%;
+  }
+
+  .sejarah-box p {
+    margin: 2rem 2%;
+    width: 60rem;
+  }
+
+  .lambang {
+    height: 90vh;
+  }
+
+  .lambang-box {
+    margin: 3rem;
+  }
+
+  .janji-a {
+    height: 5vh;
+  }
+
+  .janji-2 {
+    height: 30vh;
+  }
+
+  .img-j {
+    width: 60%;
+  }
+
+  .box-janji h1 {
+    text-align: center;
+  }
+}
